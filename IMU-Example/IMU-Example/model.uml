@@ -10,7 +10,18 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_o-wGQOxyEea5kPr64VDvRg" name="Process Guidance"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_23Xb4OxyEea5kPr64VDvRg" name="Model Domain as-is"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_6EJg8OxyEea5kPr64VDvRg" name="Model Domain to-be">
-      <packagedElement xmi:type="uml:Package" xmi:id="__7ItAOxzEea5kPr64VDvRg" name="Operational"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="__7ItAOxzEea5kPr64VDvRg" name="Operational">
+        <packagedElement xmi:type="uml:Package" xmi:id="_zug3wOx2Eea5kPr64VDvRg" name="1-Requirements"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_2iBhMOx2Eea5kPr64VDvRg" name="2-Structure"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_6IRPIOx2Eea5kPr64VDvRg" name="3-Use Cases"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_8JQPcOx2Eea5kPr64VDvRg" name="4-Behavior"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_-JPxQOx2Eea5kPr64VDvRg" name="5-Parametrics"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_D-_coOx3Eea5kPr64VDvRg" name="6-Interface Definitions">
+          <packagedElement xmi:type="uml:Package" xmi:id="_NN6qUOx3Eea5kPr64VDvRg" name="Flow Specifications"/>
+          <packagedElement xmi:type="uml:Package" xmi:id="_RI214Ox3Eea5kPr64VDvRg" name="Input-Output Definitions"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_ZWODcOx4Eea5kPr64VDvRg" name="System"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_8WU-8OxyEea5kPr64VDvRg" name="Value Types"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_9re0AOxyEea5kPr64VDvRg" name="Viewpoints"/>
