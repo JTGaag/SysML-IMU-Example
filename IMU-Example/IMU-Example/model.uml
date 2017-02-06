@@ -9,7 +9,9 @@
   <packagedElement xmi:type="uml:Package" xmi:id="_iXI5EOxyEea5kPr64VDvRg" name="Model">
     <packagedElement xmi:type="uml:Package" xmi:id="_o-wGQOxyEea5kPr64VDvRg" name="Process Guidance"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_23Xb4OxyEea5kPr64VDvRg" name="Model Domain as-is"/>
-    <packagedElement xmi:type="uml:Package" xmi:id="_6EJg8OxyEea5kPr64VDvRg" name="Model Domain to-be"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_6EJg8OxyEea5kPr64VDvRg" name="Model Domain to-be">
+      <packagedElement xmi:type="uml:Package" xmi:id="__7ItAOxzEea5kPr64VDvRg" name="Operational"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_8WU-8OxyEea5kPr64VDvRg" name="Value Types"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_9re0AOxyEea5kPr64VDvRg" name="Viewpoints"/>
   </packagedElement>
