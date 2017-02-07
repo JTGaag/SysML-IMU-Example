@@ -96,4 +96,17 @@
     </eAnnotations>
     <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
   </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Ssq3IO0pEeak1PIvYpd9hA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SstTYO0pEeak1PIvYpd9hA" source="PapyrusVersion">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SstTYe0pEeak1PIvYpd9hA" key="Version" value="0.0.2"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SstTYu0pEeak1PIvYpd9hA" key="Comment" value="-Added OOSEM stereotypes"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SstTY-0pEeak1PIvYpd9hA" key="Copyright" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SstTZO0pEeak1PIvYpd9hA" key="Date" value="2017-02-07"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SstTZe0pEeak1PIvYpd9hA" key="Author" value="JT van der Gaag"/>
+    </eAnnotations>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SsssUO0pEeak1PIvYpd9hA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="../com.joostvandergaag.SSTM-SysML-Profile/model.profile.uml#_m27ZsO0YEeak1PIvYpd9hA"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="../com.joostvandergaag.SSTM-SysML-Profile/model.profile.uml#_zZAzgO0TEeak1PIvYpd9hA"/>
+  </profileApplication>
 </uml:Model>
