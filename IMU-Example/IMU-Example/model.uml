@@ -29,10 +29,31 @@
               <packagedElement xmi:type="uml:Package" xmi:id="_-P8OIOyBEea5kPr64VDvRg" name="1-Structure"/>
               <packagedElement xmi:type="uml:Package" xmi:id="_BXl7kOyCEea5kPr64VDvRg" name="2-Behavior"/>
               <packagedElement xmi:type="uml:Package" xmi:id="_VMqJoO0TEeak1PIvYpd9hA" name="IMU">
-                <packagedElement xmi:type="uml:Class" xmi:id="_Y-4UsO0sEeak1PIvYpd9hA" name="IMU"/>
+                <packagedElement xmi:type="uml:Class" xmi:id="_Y-4UsO0sEeak1PIvYpd9hA" name="IMU">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_msiFkO0uEeak1PIvYpd9hA" name="gyroscope" type="_arWdkO0sEeak1PIvYpd9hA" aggregation="composite" association="_msfCQO0uEeak1PIvYpd9hA">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wAarwO0uEeak1PIvYpd9hA" value="3"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wAeWIO0uEeak1PIvYpd9hA" value="3"/>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_5R43Iu0uEeak1PIvYpd9hA" name="accelerometer" type="_dVyqkO0sEeak1PIvYpd9hA" aggregation="composite" association="_5R4QEO0uEeak1PIvYpd9hA">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_569pUO0uEeak1PIvYpd9hA" value="3"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_57AFkO0uEeak1PIvYpd9hA" value="3"/>
+                  </ownedAttribute>
+                </packagedElement>
                 <packagedElement xmi:type="uml:Class" xmi:id="_arWdkO0sEeak1PIvYpd9hA" name="Gyroscope"/>
                 <packagedElement xmi:type="uml:Class" xmi:id="_dVyqkO0sEeak1PIvYpd9hA" name="Accelerometer"/>
                 <packagedElement xmi:type="uml:Class" xmi:id="_qI4ikO0sEeak1PIvYpd9hA" name="Sensor"/>
+                <packagedElement xmi:type="uml:Association" xmi:id="_msfCQO0uEeak1PIvYpd9hA" memberEnd="_msiFkO0uEeak1PIvYpd9hA _msisoO0uEeak1PIvYpd9hA">
+                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_msg3cO0uEeak1PIvYpd9hA" source="org.eclipse.papyrus">
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_msg3ce0uEeak1PIvYpd9hA" key="nature" value="UML_Nature"/>
+                  </eAnnotations>
+                  <ownedEnd xmi:type="uml:Property" xmi:id="_msisoO0uEeak1PIvYpd9hA" name="imu" type="_Y-4UsO0sEeak1PIvYpd9hA" association="_msfCQO0uEeak1PIvYpd9hA"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_5R4QEO0uEeak1PIvYpd9hA" memberEnd="_5R43Iu0uEeak1PIvYpd9hA _5R5eMO0uEeak1PIvYpd9hA">
+                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5R43IO0uEeak1PIvYpd9hA" source="org.eclipse.papyrus">
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5R43Ie0uEeak1PIvYpd9hA" key="nature" value="UML_Nature"/>
+                  </eAnnotations>
+                  <ownedEnd xmi:type="uml:Property" xmi:id="_5R5eMO0uEeak1PIvYpd9hA" name="imu" type="_Y-4UsO0sEeak1PIvYpd9hA" association="_5R4QEO0uEeak1PIvYpd9hA"/>
+                </packagedElement>
               </packagedElement>
             </packagedElement>
             <packagedElement xmi:type="uml:Package" xmi:id="_6aGpMOx6Eea5kPr64VDvRg" name="5-Verifications"/>
