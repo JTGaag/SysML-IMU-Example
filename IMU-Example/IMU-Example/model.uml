@@ -20,7 +20,16 @@
           <packagedElement xmi:type="uml:Package" xmi:id="_NN6qUOx3Eea5kPr64VDvRg" name="Flow Specifications"/>
           <packagedElement xmi:type="uml:Package" xmi:id="_RI214Ox3Eea5kPr64VDvRg" name="Input-Output Definitions"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Package" xmi:id="_ZWODcOx4Eea5kPr64VDvRg" name="System"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_ZWODcOx4Eea5kPr64VDvRg" name="System">
+          <packagedElement xmi:type="uml:Package" xmi:id="_v_2Q0Ox6Eea5kPr64VDvRg" name="1-Black Box Specifications"/>
+          <packagedElement xmi:type="uml:Package" xmi:id="_z3hF8Ox6Eea5kPr64VDvRg" name="2-Logical Design"/>
+          <packagedElement xmi:type="uml:Package" xmi:id="_2CpgwOx6Eea5kPr64VDvRg" name="3-Node Logical Design"/>
+          <packagedElement xmi:type="uml:Package" xmi:id="_4Ba6kOx6Eea5kPr64VDvRg" name="4-Node Physical Design">
+            <packagedElement xmi:type="uml:Package" xmi:id="_-P8OIOyBEea5kPr64VDvRg" name="1-Structure"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="_BXl7kOyCEea5kPr64VDvRg" name="2-Behavior"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_6aGpMOx6Eea5kPr64VDvRg" name="5-Verifications"/>
+        </packagedElement>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_8WU-8OxyEea5kPr64VDvRg" name="Value Types"/>
