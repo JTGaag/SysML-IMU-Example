@@ -27,6 +27,7 @@
           <packagedElement xmi:type="uml:Package" xmi:id="_4Ba6kOx6Eea5kPr64VDvRg" name="4-Node Physical Design">
             <packagedElement xmi:type="uml:Package" xmi:id="_-P8OIOyBEea5kPr64VDvRg" name="1-Structure"/>
             <packagedElement xmi:type="uml:Package" xmi:id="_BXl7kOyCEea5kPr64VDvRg" name="2-Behavior"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="_VMqJoO0TEeak1PIvYpd9hA" name="IMU"/>
           </packagedElement>
           <packagedElement xmi:type="uml:Package" xmi:id="_6aGpMOx6Eea5kPr64VDvRg" name="5-Verifications"/>
         </packagedElement>
