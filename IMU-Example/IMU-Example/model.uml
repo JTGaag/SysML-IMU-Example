@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:SSTM.SSTM="http:///SSTM/SSTM.ecore" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http:///SSTM/SSTM.ecore ../com.joostvandergaag.SSTM-SysML-Profile/model.profile.uml#_F7lDOu0sEeak1PIvYpd9hA">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:SSTM.OOSEM="http:///SSTM/OOSEM.ecore" xmlns:SSTM.SSTM="http:///SSTM/SSTM.ecore" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http:///SSTM/OOSEM.ecore ../com.joostvandergaag.SSTM-SysML-Profile/model.profile.uml#_VDPG0u3iEeaj14wNzJqaYQ http:///SSTM/SSTM.ecore ../com.joostvandergaag.SSTM-SysML-Profile/model.profile.uml#_VDPHCe3iEeaj14wNzJqaYQ">
   <uml:Model xmi:id="_W3fYMOxtEea5kPr64VDvRg" name="RootElement">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_W9eEYOxtEea5kPr64VDvRg">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -22,37 +22,137 @@
             <packagedElement xmi:type="uml:Package" xmi:id="_RI214Ox3Eea5kPr64VDvRg" name="Input-Output Definitions"/>
           </packagedElement>
           <packagedElement xmi:type="uml:Package" xmi:id="_ZWODcOx4Eea5kPr64VDvRg" name="System">
-            <packagedElement xmi:type="uml:Package" xmi:id="_v_2Q0Ox6Eea5kPr64VDvRg" name="1-Black Box Specifications"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="_v_2Q0Ox6Eea5kPr64VDvRg" name="1-Black Box Specifications">
+              <packagedElement xmi:type="uml:Package" xmi:id="_OdIocO3VEeaj14wNzJqaYQ" name="1-Requirements"/>
+              <packagedElement xmi:type="uml:Package" xmi:id="_QSp_oO3VEeaj14wNzJqaYQ" name="2-Structure">
+                <packagedElement xmi:type="uml:Class" xmi:id="_ERzncO3WEeaj14wNzJqaYQ" name="Satellite"/>
+              </packagedElement>
+            </packagedElement>
             <packagedElement xmi:type="uml:Package" xmi:id="_z3hF8Ox6Eea5kPr64VDvRg" name="2-Logical Design"/>
             <packagedElement xmi:type="uml:Package" xmi:id="_2CpgwOx6Eea5kPr64VDvRg" name="3-Node Logical Design"/>
             <packagedElement xmi:type="uml:Package" xmi:id="_4Ba6kOx6Eea5kPr64VDvRg" name="4-Node Physical Design">
-              <packagedElement xmi:type="uml:Package" xmi:id="_-P8OIOyBEea5kPr64VDvRg" name="1-Structure"/>
+              <packagedElement xmi:type="uml:Package" xmi:id="_-P8OIOyBEea5kPr64VDvRg" name="1-Structure">
+                <packagedElement xmi:type="uml:Class" xmi:id="_vb8_oO3lEeaj14wNzJqaYQ" name="Satellite Node Physical">
+                  <generalization xmi:type="uml:Generalization" xmi:id="_vcJM4O3lEeaj14wNzJqaYQ" general="_ERzncO3WEeaj14wNzJqaYQ"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_5HM4wO3sEeaj14wNzJqaYQ" name="adcs" type="_Y2i00O3sEeaj14wNzJqaYQ" aggregation="composite" association="_5HJ1cO3sEeaj14wNzJqaYQ"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_7DKPIO3sEeaj14wNzJqaYQ" name="power" type="_gEJD8O3sEeaj14wNzJqaYQ" aggregation="composite" association="_7DJoEO3sEeaj14wNzJqaYQ"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_7WA5su3sEeaj14wNzJqaYQ" name="thermal" type="_llIAQO3sEeaj14wNzJqaYQ" aggregation="composite" association="_7WASoO3sEeaj14wNzJqaYQ"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_78kjYu3sEeaj14wNzJqaYQ" name="structures" type="_omffgO3sEeaj14wNzJqaYQ" aggregation="composite" association="_78j8UO3sEeaj14wNzJqaYQ"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_8Rj78u3sEeaj14wNzJqaYQ" name="communications" type="_q4qWcO3sEeaj14wNzJqaYQ" aggregation="composite" association="_8RjU4O3sEeaj14wNzJqaYQ"/>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_8ppEwe3sEeaj14wNzJqaYQ" name="c&amp;dh" type="_tBPMgO3sEeaj14wNzJqaYQ" aggregation="composite" association="_8podsO3sEeaj14wNzJqaYQ"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_5HJ1cO3sEeaj14wNzJqaYQ" memberEnd="_5HM4wO3sEeaj14wNzJqaYQ _5HM4we3sEeaj14wNzJqaYQ">
+                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5HLqoO3sEeaj14wNzJqaYQ" source="org.eclipse.papyrus">
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5HMRsO3sEeaj14wNzJqaYQ" key="nature" value="UML_Nature"/>
+                  </eAnnotations>
+                  <ownedEnd xmi:type="uml:Property" xmi:id="_5HM4we3sEeaj14wNzJqaYQ" name="satellite node physical" type="_vb8_oO3lEeaj14wNzJqaYQ" association="_5HJ1cO3sEeaj14wNzJqaYQ"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_7DJoEO3sEeaj14wNzJqaYQ" memberEnd="_7DKPIO3sEeaj14wNzJqaYQ _7DKPIe3sEeaj14wNzJqaYQ">
+                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7DJoEe3sEeaj14wNzJqaYQ" source="org.eclipse.papyrus">
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7DJoEu3sEeaj14wNzJqaYQ" key="nature" value="UML_Nature"/>
+                  </eAnnotations>
+                  <ownedEnd xmi:type="uml:Property" xmi:id="_7DKPIe3sEeaj14wNzJqaYQ" name="satellite node physical" type="_vb8_oO3lEeaj14wNzJqaYQ" association="_7DJoEO3sEeaj14wNzJqaYQ"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_7WASoO3sEeaj14wNzJqaYQ" memberEnd="_7WA5su3sEeaj14wNzJqaYQ _7WBgwO3sEeaj14wNzJqaYQ">
+                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7WA5sO3sEeaj14wNzJqaYQ" source="org.eclipse.papyrus">
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7WA5se3sEeaj14wNzJqaYQ" key="nature" value="UML_Nature"/>
+                  </eAnnotations>
+                  <ownedEnd xmi:type="uml:Property" xmi:id="_7WBgwO3sEeaj14wNzJqaYQ" name="satellite node physical" type="_vb8_oO3lEeaj14wNzJqaYQ" association="_7WASoO3sEeaj14wNzJqaYQ"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_78j8UO3sEeaj14wNzJqaYQ" memberEnd="_78kjYu3sEeaj14wNzJqaYQ _78kjY-3sEeaj14wNzJqaYQ">
+                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_78kjYO3sEeaj14wNzJqaYQ" source="org.eclipse.papyrus">
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_78kjYe3sEeaj14wNzJqaYQ" key="nature" value="UML_Nature"/>
+                  </eAnnotations>
+                  <ownedEnd xmi:type="uml:Property" xmi:id="_78kjY-3sEeaj14wNzJqaYQ" name="satellite node physical" type="_vb8_oO3lEeaj14wNzJqaYQ" association="_78j8UO3sEeaj14wNzJqaYQ"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_8RjU4O3sEeaj14wNzJqaYQ" memberEnd="_8Rj78u3sEeaj14wNzJqaYQ _8Rj78-3sEeaj14wNzJqaYQ">
+                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8Rj78O3sEeaj14wNzJqaYQ" source="org.eclipse.papyrus">
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8Rj78e3sEeaj14wNzJqaYQ" key="nature" value="UML_Nature"/>
+                  </eAnnotations>
+                  <ownedEnd xmi:type="uml:Property" xmi:id="_8Rj78-3sEeaj14wNzJqaYQ" name="satellite node physical" type="_vb8_oO3lEeaj14wNzJqaYQ" association="_8RjU4O3sEeaj14wNzJqaYQ"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_8podsO3sEeaj14wNzJqaYQ" memberEnd="_8ppEwe3sEeaj14wNzJqaYQ _8ppEwu3sEeaj14wNzJqaYQ">
+                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8podse3sEeaj14wNzJqaYQ" source="org.eclipse.papyrus">
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8ppEwO3sEeaj14wNzJqaYQ" key="nature" value="UML_Nature"/>
+                  </eAnnotations>
+                  <ownedEnd xmi:type="uml:Property" xmi:id="_8ppEwu3sEeaj14wNzJqaYQ" name="satellite node physical" type="_vb8_oO3lEeaj14wNzJqaYQ" association="_8podsO3sEeaj14wNzJqaYQ"/>
+                </packagedElement>
+              </packagedElement>
               <packagedElement xmi:type="uml:Package" xmi:id="_BXl7kOyCEea5kPr64VDvRg" name="2-Behavior"/>
-              <packagedElement xmi:type="uml:Package" xmi:id="_VMqJoO0TEeak1PIvYpd9hA" name="IMU">
-                <packagedElement xmi:type="uml:Class" xmi:id="_Y-4UsO0sEeak1PIvYpd9hA" name="IMU">
-                  <ownedAttribute xmi:type="uml:Property" xmi:id="_msiFkO0uEeak1PIvYpd9hA" name="gyroscope" type="_arWdkO0sEeak1PIvYpd9hA" aggregation="composite" association="_msfCQO0uEeak1PIvYpd9hA">
-                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wAarwO0uEeak1PIvYpd9hA" value="3"/>
-                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wAeWIO0uEeak1PIvYpd9hA" value="3"/>
-                  </ownedAttribute>
-                  <ownedAttribute xmi:type="uml:Property" xmi:id="_5R43Iu0uEeak1PIvYpd9hA" name="accelerometer" type="_dVyqkO0sEeak1PIvYpd9hA" aggregation="composite" association="_5R4QEO0uEeak1PIvYpd9hA">
-                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_569pUO0uEeak1PIvYpd9hA" value="3"/>
-                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_57AFkO0uEeak1PIvYpd9hA" value="3"/>
-                  </ownedAttribute>
+              <packagedElement xmi:type="uml:Package" xmi:id="_foiNYO3pEeaj14wNzJqaYQ" name="ADCS">
+                <packagedElement xmi:type="uml:Package" xmi:id="_1fjHgO3qEeaj14wNzJqaYQ" name="1-Requirements"/>
+                <packagedElement xmi:type="uml:Package" xmi:id="_5oKisO3qEeaj14wNzJqaYQ" name="2-Structure">
+                  <packagedElement xmi:type="uml:Package" xmi:id="_F4NYAO3rEeaj14wNzJqaYQ" name="1-Hardware">
+                    <packagedElement xmi:type="uml:Package" xmi:id="_VMqJoO0TEeak1PIvYpd9hA" name="IMU">
+                      <packagedElement xmi:type="uml:Class" xmi:id="_Y-4UsO0sEeak1PIvYpd9hA" name="IMU">
+                        <ownedAttribute xmi:type="uml:Property" xmi:id="_msiFkO0uEeak1PIvYpd9hA" name="gyroscope" type="_arWdkO0sEeak1PIvYpd9hA" aggregation="composite" association="_msfCQO0uEeak1PIvYpd9hA">
+                          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wAarwO0uEeak1PIvYpd9hA" value="3"/>
+                          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wAeWIO0uEeak1PIvYpd9hA" value="3"/>
+                        </ownedAttribute>
+                        <ownedAttribute xmi:type="uml:Property" xmi:id="_5R43Iu0uEeak1PIvYpd9hA" name="accelerometer" type="_dVyqkO0sEeak1PIvYpd9hA" aggregation="composite" association="_5R4QEO0uEeak1PIvYpd9hA">
+                          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_569pUO0uEeak1PIvYpd9hA" value="3"/>
+                          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_57AFkO0uEeak1PIvYpd9hA" value="3"/>
+                        </ownedAttribute>
+                      </packagedElement>
+                      <packagedElement xmi:type="uml:Class" xmi:id="_arWdkO0sEeak1PIvYpd9hA" name="Gyroscope"/>
+                      <packagedElement xmi:type="uml:Class" xmi:id="_dVyqkO0sEeak1PIvYpd9hA" name="Accelerometer"/>
+                      <packagedElement xmi:type="uml:Class" xmi:id="_qI4ikO0sEeak1PIvYpd9hA" name="Sensor"/>
+                      <packagedElement xmi:type="uml:Association" xmi:id="_msfCQO0uEeak1PIvYpd9hA" memberEnd="_msiFkO0uEeak1PIvYpd9hA _msisoO0uEeak1PIvYpd9hA">
+                        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_msg3cO0uEeak1PIvYpd9hA" source="org.eclipse.papyrus">
+                          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_msg3ce0uEeak1PIvYpd9hA" key="nature" value="UML_Nature"/>
+                        </eAnnotations>
+                        <ownedEnd xmi:type="uml:Property" xmi:id="_msisoO0uEeak1PIvYpd9hA" name="imu" type="_Y-4UsO0sEeak1PIvYpd9hA" association="_msfCQO0uEeak1PIvYpd9hA"/>
+                      </packagedElement>
+                      <packagedElement xmi:type="uml:Association" xmi:id="_5R4QEO0uEeak1PIvYpd9hA" memberEnd="_5R43Iu0uEeak1PIvYpd9hA _5R5eMO0uEeak1PIvYpd9hA">
+                        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5R43IO0uEeak1PIvYpd9hA" source="org.eclipse.papyrus">
+                          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5R43Ie0uEeak1PIvYpd9hA" key="nature" value="UML_Nature"/>
+                        </eAnnotations>
+                        <ownedEnd xmi:type="uml:Property" xmi:id="_5R5eMO0uEeak1PIvYpd9hA" name="imu" type="_Y-4UsO0sEeak1PIvYpd9hA" association="_5R4QEO0uEeak1PIvYpd9hA"/>
+                      </packagedElement>
+                    </packagedElement>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Package" xmi:id="_HyTGIO3rEeaj14wNzJqaYQ" name="2-Software"/>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_Y2i00O3sEeaj14wNzJqaYQ" name="ADCS"/>
                 </packagedElement>
-                <packagedElement xmi:type="uml:Class" xmi:id="_arWdkO0sEeak1PIvYpd9hA" name="Gyroscope"/>
-                <packagedElement xmi:type="uml:Class" xmi:id="_dVyqkO0sEeak1PIvYpd9hA" name="Accelerometer"/>
-                <packagedElement xmi:type="uml:Class" xmi:id="_qI4ikO0sEeak1PIvYpd9hA" name="Sensor"/>
-                <packagedElement xmi:type="uml:Association" xmi:id="_msfCQO0uEeak1PIvYpd9hA" memberEnd="_msiFkO0uEeak1PIvYpd9hA _msisoO0uEeak1PIvYpd9hA">
-                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_msg3cO0uEeak1PIvYpd9hA" source="org.eclipse.papyrus">
-                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_msg3ce0uEeak1PIvYpd9hA" key="nature" value="UML_Nature"/>
-                  </eAnnotations>
-                  <ownedEnd xmi:type="uml:Property" xmi:id="_msisoO0uEeak1PIvYpd9hA" name="imu" type="_Y-4UsO0sEeak1PIvYpd9hA" association="_msfCQO0uEeak1PIvYpd9hA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_gvZHwO3pEeaj14wNzJqaYQ" name="Power">
+                <packagedElement xmi:type="uml:Package" xmi:id="_9DKC4O3qEeaj14wNzJqaYQ" name="1-Requirements"/>
+                <packagedElement xmi:type="uml:Package" xmi:id="_9DKp8O3qEeaj14wNzJqaYQ" name="2-Structure">
+                  <packagedElement xmi:type="uml:Package" xmi:id="_JSqFoO3rEeaj14wNzJqaYQ" name="1-Hardware"/>
+                  <packagedElement xmi:type="uml:Package" xmi:id="_JSqssO3rEeaj14wNzJqaYQ" name="2-Software"/>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_gEJD8O3sEeaj14wNzJqaYQ" name="Power"/>
                 </packagedElement>
-                <packagedElement xmi:type="uml:Association" xmi:id="_5R4QEO0uEeak1PIvYpd9hA" memberEnd="_5R43Iu0uEeak1PIvYpd9hA _5R5eMO0uEeak1PIvYpd9hA">
-                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5R43IO0uEeak1PIvYpd9hA" source="org.eclipse.papyrus">
-                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5R43Ie0uEeak1PIvYpd9hA" key="nature" value="UML_Nature"/>
-                  </eAnnotations>
-                  <ownedEnd xmi:type="uml:Property" xmi:id="_5R5eMO0uEeak1PIvYpd9hA" name="imu" type="_Y-4UsO0sEeak1PIvYpd9hA" association="_5R4QEO0uEeak1PIvYpd9hA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_iLyNQO3pEeaj14wNzJqaYQ" name="Thermal">
+                <packagedElement xmi:type="uml:Package" xmi:id="_-Msd0O3qEeaj14wNzJqaYQ" name="1-Requirements"/>
+                <packagedElement xmi:type="uml:Package" xmi:id="_-Msd0e3qEeaj14wNzJqaYQ" name="2-Structure">
+                  <packagedElement xmi:type="uml:Package" xmi:id="_JmOh4O3rEeaj14wNzJqaYQ" name="1-Hardware"/>
+                  <packagedElement xmi:type="uml:Package" xmi:id="_JmPI8O3rEeaj14wNzJqaYQ" name="2-Software"/>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_llIAQO3sEeaj14wNzJqaYQ" name="Thermal"/>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_jF-koO3pEeaj14wNzJqaYQ" name="Structures">
+                <packagedElement xmi:type="uml:Package" xmi:id="_-UaPYO3qEeaj14wNzJqaYQ" name="1-Requirements"/>
+                <packagedElement xmi:type="uml:Package" xmi:id="_-Ua2cO3qEeaj14wNzJqaYQ" name="2-Structure">
+                  <packagedElement xmi:type="uml:Package" xmi:id="_J7zwUO3rEeaj14wNzJqaYQ" name="1-Hardware"/>
+                  <packagedElement xmi:type="uml:Package" xmi:id="_J7zwUe3rEeaj14wNzJqaYQ" name="2-Software"/>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_omffgO3sEeaj14wNzJqaYQ" name="Structures"/>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_p1d7cO3pEeaj14wNzJqaYQ" name="Communications">
+                <packagedElement xmi:type="uml:Package" xmi:id="_-cDIcO3qEeaj14wNzJqaYQ" name="1-Requirements"/>
+                <packagedElement xmi:type="uml:Package" xmi:id="_-cDIce3qEeaj14wNzJqaYQ" name="2-Structure">
+                  <packagedElement xmi:type="uml:Package" xmi:id="_KMU4kO3rEeaj14wNzJqaYQ" name="1-Hardware"/>
+                  <packagedElement xmi:type="uml:Package" xmi:id="_KMVfoO3rEeaj14wNzJqaYQ" name="2-Software"/>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_q4qWcO3sEeaj14wNzJqaYQ" name="Communications"/>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_rCgWUO3pEeaj14wNzJqaYQ" name="C&amp;DH">
+                <packagedElement xmi:type="uml:Package" xmi:id="_-kJUgO3qEeaj14wNzJqaYQ" name="1-Requirements"/>
+                <packagedElement xmi:type="uml:Package" xmi:id="_-kJUge3qEeaj14wNzJqaYQ" name="2-Structure">
+                  <packagedElement xmi:type="uml:Package" xmi:id="_KiwbkO3rEeaj14wNzJqaYQ" name="1-Hardware"/>
+                  <packagedElement xmi:type="uml:Package" xmi:id="_Kiwbke3rEeaj14wNzJqaYQ" name="2-Software"/>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_tBPMgO3sEeaj14wNzJqaYQ" name="C&amp;DH"/>
                 </packagedElement>
               </packagedElement>
             </packagedElement>
@@ -123,22 +223,30 @@
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
     </profileApplication>
-    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Ssq3IO0pEeak1PIvYpd9hA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QOcZ0O0sEeak1PIvYpd9hA" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QOcZ0e0sEeak1PIvYpd9hA" key="Version" value="0.0.3"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QOcZ0u0sEeak1PIvYpd9hA" key="Comment" value="Added supported SLIM componetns as sereotypes to SSTM"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QOcZ0-0sEeak1PIvYpd9hA" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QOcZ1O0sEeak1PIvYpd9hA" key="Date" value="2017-02-07"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QOcZ1e0sEeak1PIvYpd9hA" key="Author" value="JT van der Gaag"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_N9yZAO3gEeaj14wNzJqaYQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XXCOEO3lEeaj14wNzJqaYQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XXCOEe3lEeaj14wNzJqaYQ" key="Version" value="0.0.9"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XXCOEu3lEeaj14wNzJqaYQ" key="Comment" value="Removed property generalization and replaced for some to extension association"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XXCOE-3lEeaj14wNzJqaYQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XXCOFO3lEeaj14wNzJqaYQ" key="Date" value="2017-02-08"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XXCOFe3lEeaj14wNzJqaYQ" key="Author" value="JT van der Gaag"/>
       </eAnnotations>
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SsssUO0pEeak1PIvYpd9hA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../com.joostvandergaag.SSTM-SysML-Profile/model.profile.uml#_F7lC4O0sEeak1PIvYpd9hA"/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_N9zAEO3gEeaj14wNzJqaYQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../com.joostvandergaag.SSTM-SysML-Profile/model.profile.uml#_VDPG0O3iEeaj14wNzJqaYQ"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="../com.joostvandergaag.SSTM-SysML-Profile/model.profile.uml#_zZAzgO0TEeak1PIvYpd9hA"/>
     </profileApplication>
   </uml:Model>
-  <SSTM.SSTM:device xmi:id="_h3HgsO0sEeak1PIvYpd9hA" base_Class="_Y-4UsO0sEeak1PIvYpd9hA"/>
-  <SSTM.SSTM:device xmi:id="_mzqTMO0sEeak1PIvYpd9hA" base_Class="_arWdkO0sEeak1PIvYpd9hA"/>
-  <SSTM.SSTM:device xmi:id="_nuinEO0sEeak1PIvYpd9hA" base_Class="_dVyqkO0sEeak1PIvYpd9hA"/>
   <Blocks:Block xmi:id="_qJHzIO0sEeak1PIvYpd9hA" base_Class="_qI4ikO0sEeak1PIvYpd9hA"/>
+  <SSTM.SSTM:Device xmi:id="_UgZxcO3gEeaj14wNzJqaYQ" base_Class="_Y-4UsO0sEeak1PIvYpd9hA"/>
+  <SSTM.SSTM:Device xmi:id="_VfLt4O3gEeaj14wNzJqaYQ" base_Class="_arWdkO0sEeak1PIvYpd9hA"/>
+  <SSTM.SSTM:Device xmi:id="_LYZOoO3hEeaj14wNzJqaYQ" base_Class="_dVyqkO0sEeak1PIvYpd9hA"/>
+  <SSTM.OOSEM:SystemOfInterest xmi:id="_ZcGdIO3lEeaj14wNzJqaYQ" base_Class="_ERzncO3WEeaj14wNzJqaYQ"/>
+  <SSTM.OOSEM:SystemOfInterest xmi:id="_3bmWwO3lEeaj14wNzJqaYQ" base_Class="_vb8_oO3lEeaj14wNzJqaYQ"/>
+  <SSTM.OOSEM:NodePhysical xmi:id="_aA69QO3sEeaj14wNzJqaYQ" base_Class="_Y2i00O3sEeaj14wNzJqaYQ"/>
+  <SSTM.OOSEM:NodePhysical xmi:id="_hxjA8O3sEeaj14wNzJqaYQ" base_Class="_gEJD8O3sEeaj14wNzJqaYQ"/>
+  <SSTM.OOSEM:NodePhysical xmi:id="_nuIUIO3sEeaj14wNzJqaYQ" base_Class="_llIAQO3sEeaj14wNzJqaYQ"/>
+  <SSTM.OOSEM:NodePhysical xmi:id="_qITQgO3sEeaj14wNzJqaYQ" base_Class="_omffgO3sEeaj14wNzJqaYQ"/>
+  <SSTM.OOSEM:NodePhysical xmi:id="_sOUh0O3sEeaj14wNzJqaYQ" base_Class="_q4qWcO3sEeaj14wNzJqaYQ"/>
+  <SSTM.OOSEM:NodePhysical xmi:id="_uYfTUO3sEeaj14wNzJqaYQ" base_Class="_tBPMgO3sEeaj14wNzJqaYQ"/>
 </xmi:XMI>
